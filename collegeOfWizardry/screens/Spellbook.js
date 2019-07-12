@@ -6,15 +6,15 @@ import { Transition } from 'react-navigation-fluid-transitions';
 const { width, height } = Dimensions.get('window');
 
 const images = [
-  { image: require('../assets/drink1.jpg'), title: "Vokda Cran" },
-  { image: require('../assets/drink2.jpg'), title: "Old Fashion"},
-  { image: require('../assets/drink3.jpg'), title: "Mule" },
-  { image: require('../assets/drink4.jpg'), title: "Strawberry Daiquiri" }
+  { image: require('../assets/monster.jpg'),
+  { image: require('../assets/spirit.jpg'),
+  { image: require('../assets/mage.jpg'),
+  { image: require('../assets/firemage.jpg')
 ];
 
 const getInterpolate = (animatedValue, i, imageLength) => {
   const inputRange = [
-    i - 1 * width, // -1 * width // - 414
+    (i - 1) * width, // -1 * width // - 414
     i * width,  // 0 or width // 0 // When at width we do don't translate
     (i + 1) * width // 1 * width // 828 // when we swipe past we will translate 150 left on prev picutre
   ];
